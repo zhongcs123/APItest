@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.Map.Entry;
 
 import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.CookieStore;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
@@ -27,7 +28,7 @@ public class httpClientRequest {
 		//创建一个HttpGet的请求对象
 		HttpGet getRequest=new HttpGet(url);
 		
-		 //执行请求,相当于点击发送按钮，然后赋值给HttpResponse对象接收
+		 //发送请求，然后响应内容赋值给HttpResponse对象接收
 		CloseableHttpResponse HttpResponse=client.execute(getRequest);
 		return HttpResponse;
 	}
@@ -54,13 +55,34 @@ public class httpClientRequest {
 			request.setHeader(entry.getKey(), entry.getValue());
 		}
 		
-		 //执行请求,相当于postman上点击发送按钮，然后赋值给HttpResponse对象接收
+		request.setHeader("Cookie","");
+		
+		//发送请求，然后响应内容赋值给HttpResponse对象接收
 		CloseableHttpResponse httpResponse=client.execute(request);
 
 		return httpResponse;
 	}
 	
 	
+	/**
+	 * get 请求方法(带自定义cookies)
+	 * @param url
+	 * @return
+	 * @throws ClientProtocolException
+	 * @throws IOException
+	 */
+	public CloseableHttpResponse get(String url,CookieStore cookieStore) throws ClientProtocolException, IOException {
+		
+		//创建一个可关闭的client，自定义添加cookieStore
+		CloseableHttpClient client=HttpClients.custom().setDefaultCookieStore(cookieStore).build();
+		
+		//创建一个HttpGet的请求对象
+		HttpGet getRequest=new HttpGet(url);
+		
+		 //发送请求，然后响应内容赋值给HttpResponse对象接收
+		CloseableHttpResponse HttpResponse=client.execute(getRequest);
+		return HttpResponse;
+	}
 	
 	
 	
