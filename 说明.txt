@@ -1,0 +1,16 @@
+1、post请求，带参数，配置文件参数格式输入为（格式：key1=value1&key2=value2）
+
+2、请求带header，先HashMap，把header集合到map中：
+	public HashMap<String, String> headerUtil() {
+		//准备信息头header
+		HashMap<String, String> map=new HashMap<String, String>();
+		map.put("content-type", "application/json");
+		return map;
+	}
+	
+3、cookie添加,先new个对象，逐个添加输入
+		CookieStore store=new CookieStore();
+		BasicClientCookie cookie1 = cookieStores.cookie("cookieName1", "cookieValue1", "localhost");
+		BasicClientCookie cookie2 = cookieStores.cookie("cookieName2", "cookieValue2", "localhost");
+		store.addCookie(cookie1);
+		store.addCookie(cookie2);

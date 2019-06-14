@@ -1,4 +1,4 @@
-package HttpClient.HttpClientSpringboot.utils;
+package HttpClient.HttpClientSpringboot.testCase;
 
 import java.io.IOException;
 
@@ -18,8 +18,9 @@ public class cookieStore {
 		CookieStore cookieStore=new BasicCookieStore();
 		BasicClientCookie cookie=new BasicClientCookie("cookieName", "cookieValue");//
 		cookie.setDomain("localhost");//添加域名
-		cookie.setPath("/");//添加path
+//		cookie.setPath("/");//添加path
 		cookieStore.addCookie(cookie);//把cookie添加到cookieStore中
+		
 		
 		//创建一个可关闭的HttpClient，自定义添加cookieStore
 		CloseableHttpClient httpClient=HttpClients.custom().setDefaultCookieStore(cookieStore).build();

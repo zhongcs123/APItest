@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="19" started-at="2019-06-12T09:42:08Z" finished-at="2019-06-12T09:42:08Z">
+  <suite name="Default suite" duration-ms="466" started-at="2019-06-14T08:15:18Z" finished-at="2019-06-14T08:15:19Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="19" started-at="2019-06-12T09:42:08Z" finished-at="2019-06-12T09:42:08Z">
-      <class name="HttpClient.HttpClientSpringboot.testCase.NewTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:HttpClient.HttpClientSpringboot.testCase.NewTest@1ef7fe8e]" name="beforeClass" is-config="true" duration-ms="5" started-at="2019-06-12T17:42:08Z" finished-at="2019-06-12T17:42:08Z">
+    <test name="Default test" duration-ms="466" started-at="2019-06-14T08:15:18Z" finished-at="2019-06-14T08:15:19Z">
+      <class name="HttpClient.HttpClientSpringboot.testCase.cookieTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:HttpClient.HttpClientSpringboot.testCase.cookieTest@17ed40e0]" name="beforeClass" is-config="true" duration-ms="10" started-at="2019-06-14T16:15:18Z" finished-at="2019-06-14T16:15:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="f()[pri:0, instance:HttpClient.HttpClientSpringboot.testCase.NewTest@1ef7fe8e]" name="f" duration-ms="4" started-at="2019-06-12T17:42:08Z" finished-at="2019-06-12T17:42:08Z">
+        <test-method status="PASS" signature="testCookie()[pri:0, instance:HttpClient.HttpClientSpringboot.testCase.cookieTest@17ed40e0]" name="testCookie" duration-ms="448" started-at="2019-06-14T16:15:18Z" finished-at="2019-06-14T16:15:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:HttpClient.HttpClientSpringboot.testCase.NewTest@1ef7fe8e]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-06-12T17:42:08Z" finished-at="2019-06-12T17:42:08Z">
+        </test-method> <!-- testCookie -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:HttpClient.HttpClientSpringboot.testCase.cookieTest@17ed40e0]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-06-14T16:15:19Z" finished-at="2019-06-14T16:15:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- HttpClient.HttpClientSpringboot.testCase.NewTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- HttpClient.HttpClientSpringboot.testCase.cookieTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
