@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="792" started-at="2019-06-17T04:53:41Z" finished-at="2019-06-17T04:53:42Z">
+  <suite name="Default suite" duration-ms="497" started-at="2019-06-17T09:02:59Z" finished-at="2019-06-17T09:03:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="792" started-at="2019-06-17T04:53:41Z" finished-at="2019-06-17T04:53:42Z">
-      <class name="HttpClient.HttpClientSpringboot.testCase.postParamsTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:HttpClient.HttpClientSpringboot.testCase.postParamsTest@763d9750]" name="beforeClass" is-config="true" duration-ms="15" started-at="2019-06-17T12:53:41Z" finished-at="2019-06-17T12:53:41Z">
+    <test name="Default test" duration-ms="497" started-at="2019-06-17T09:02:59Z" finished-at="2019-06-17T09:03:00Z">
+      <class name="HttpClient.HttpClientSpringboot.testCase.headerTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:HttpClient.HttpClientSpringboot.testCase.headerTest@763d9750]" name="beforeClass" is-config="true" duration-ms="8" started-at="2019-06-17T17:02:59Z" finished-at="2019-06-17T17:02:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="FAIL" signature="postParamsDemo1()[pri:0, instance:HttpClient.HttpClientSpringboot.testCase.postParamsTest@763d9750]" name="postParamsDemo1" duration-ms="724" started-at="2019-06-17T12:53:41Z" finished-at="2019-06-17T12:53:42Z">
+        <test-method status="FAIL" signature="headersDemo()[pri:0, instance:HttpClient.HttpClientSpringboot.testCase.headerTest@763d9750]" name="headersDemo" duration-ms="480" started-at="2019-06-17T17:02:59Z" finished-at="2019-06-17T17:03:00Z">
           <exception class="org.apache.http.ConnectionClosedException">
             <message>
               <![CDATA[Premature end of Content-Length delimited message body (expected: 36; received: 0)]]>
@@ -28,8 +28,8 @@
 	at org.apache.http.util.EntityUtils.toString(EntityUtils.java:227)
 	at org.apache.http.util.EntityUtils.toString(EntityUtils.java:270)
 	at org.apache.http.util.EntityUtils.toString(EntityUtils.java:290)
-	at HttpClient.HttpClientSpringboot.utils.reponseUtil.contentString(reponseUtil.java:20)
-	at HttpClient.HttpClientSpringboot.testCase.postParamsTest.postParamsDemo1(postParamsTest.java:24)
+	at HttpClient.HttpClientSpringboot.utils.reponseUtil.contentString(reponseUtil.java:22)
+	at HttpClient.HttpClientSpringboot.testCase.headerTest.headersDemo(headerTest.java:25)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -59,12 +59,12 @@
           </exception> <!-- org.apache.http.ConnectionClosedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- postParamsDemo1 -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:HttpClient.HttpClientSpringboot.testCase.postParamsTest@763d9750]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-06-17T12:53:42Z" finished-at="2019-06-17T12:53:42Z">
+        </test-method> <!-- headersDemo -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:HttpClient.HttpClientSpringboot.testCase.headerTest@763d9750]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-06-17T17:03:00Z" finished-at="2019-06-17T17:03:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- HttpClient.HttpClientSpringboot.testCase.postParamsTest -->
+      </class> <!-- HttpClient.HttpClientSpringboot.testCase.headerTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

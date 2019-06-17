@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="HttpClient.HttpClientSpringboot.testCase.postParamsTest">
+      <class name="HttpClient.HttpClientSpringboot.testCase.headerTest">
         <methods>
-          <include name="beforeClass"/>
           <include name="afterClass"/>
-          <include name="postParamsDemo1"/>
+          <include name="headersDemo"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- HttpClient.HttpClientSpringboot.testCase.postParamsTest -->
+      </class> <!-- HttpClient.HttpClientSpringboot.testCase.headerTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
