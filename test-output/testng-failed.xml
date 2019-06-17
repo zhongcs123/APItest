@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="HttpClient.HttpClientSpringboot.testCase.cookieTest">
+      <class name="HttpClient.HttpClientSpringboot.testCase.postParamsTest">
         <methods>
-          <include name="testCookie"/>
-          <include name="afterClass"/>
           <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="postParamsDemo1"/>
         </methods>
-      </class> <!-- HttpClient.HttpClientSpringboot.testCase.cookieTest -->
+      </class> <!-- HttpClient.HttpClientSpringboot.testCase.postParamsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

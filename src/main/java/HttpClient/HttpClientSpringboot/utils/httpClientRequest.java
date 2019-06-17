@@ -233,6 +233,9 @@ public class httpClientRequest {
 		
 		//发送请求，响应内容赋值response对象
 		CloseableHttpResponse response=client.execute(request);
+		
+		client.close();
+		
 		return response;
 	}
 	

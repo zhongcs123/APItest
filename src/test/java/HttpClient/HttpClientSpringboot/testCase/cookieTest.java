@@ -32,7 +32,7 @@ public class cookieTest {
 		store.addCookie(cookie2);
 
 		CloseableHttpResponse content = Request.get("http://localhost:1111/getDemo/cookies", store);
-		String contentString = reponse.content(content);
+		String contentString = reponse.contentString(content);
 		System.out.println(contentString);
 
 	}
